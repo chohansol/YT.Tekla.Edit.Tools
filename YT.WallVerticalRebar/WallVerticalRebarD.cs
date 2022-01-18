@@ -20,7 +20,8 @@ namespace YT.WallVerticalRebar
     {
         [TSP.StructuresField("W_Coordination")] public string W_Coordination;
 
-        #region Right Rebar
+        #region Right Rebar 
+
         [TSP.StructuresField("R_Name")] public string R_Name;
         [TSP.StructuresField("R_Grade")] public string R_Grade;
         [TSP.StructuresField("R_Size")] public string R_Size;
