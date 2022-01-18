@@ -150,8 +150,6 @@ namespace YT.WallVerticalRebar
             var rightKsXE = KS.GetDiameter(Convert.ToDouble(D.R_Size)) / 2;
             var rightKsY = KS.GetDiameter(Convert.ToDouble(D.R_Size)) / 2;
 
-            
-
             var leftMoveXS = D.L_MoveXS;
             var leftMoveXE = D.L_MoveXE;
             var leftMoveY = D.L_MoveY;
@@ -159,8 +157,6 @@ namespace YT.WallVerticalRebar
             var leftKsXS = KS.GetDiameter(Convert.ToDouble(D.L_Size)) / 2;
             var leftKsXE = KS.GetDiameter(Convert.ToDouble(D.L_Size)) / 2;
             var leftKsY = KS.GetDiameter(Convert.ToDouble(D.L_Size)) / 2;
-
-            
 
             #endregion
 
