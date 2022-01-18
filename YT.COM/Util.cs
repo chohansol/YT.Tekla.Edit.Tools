@@ -141,28 +141,5 @@ namespace YT.COM
             }
         }
 
-        //public static class Spacing
-        //{
-        //    public static ArrayList SetSpacing(double length, double spacing)
-        //    {
-        //        var spac = new Spacings();
-
-        //        //var rebarRange = length;
-
-        //        var ea =Math.Truncate(length / spacing);
-
-        //        ArrayList list = new ArrayList();
-
-        //        for (int i = 0; i < ea; i++)
-        //        {
-        //            list.Add(spacing);
-        //        }
-
-        //        list.Add(length - (spacing * (ea)));
-
-        //        return list;
-        //    }
-
-        //}
     }
 }
