@@ -80,7 +80,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArrlayList.cs" />
     <Compile Include="KS.cs" />
     <Compile Include="Rebar.cs" />
     <Compile Include="Spacings.cs" />
