@@ -398,169 +398,29 @@ namespace TEST
             bar.StartPoint = part.StartPoint;
             bar.EndPoint = part.EndPoint;
 
-            //TSM.Polygon p = new TSM.Polygon();
-            //p.Points.Add(new TSG.Point(minX, minY, minZ));
-            //p.Points.Add(new TSG.Point(minX, minY, maxZ));
-            //p.Points.Add(new TSG.Point(0,0,0));
-            //p.Points.Add(new TSG.Point(0,0,1000));
-            // var poly = new TSM.Polygon();
-            //poly.Points.Add(new TSG.Point(0, 0, 0));
-            //poly.Points.Add(new TSG.Point(0, 0,1000));
-            //TSM.Polygon poly = new TSM.Polygon();
-            //poly.Points.Add(new TSG.Point(minX, minY, minZ));
-            //poly.Points.Add(new TSG.Point(minX, minY, maxZ));
-
-            //var poly = new TSM.Polygon();
-            //poly.Points.Add(new TSG.Point(0, 0, 0));
-            //poly.Points.Add(new TSG.Point(0, 0, 1000));
-
-            //var poly = new TSM.Polygon();
-            //poly.Points.Add(new TSG.Point(0, 0, 0));
-            //poly.Points.Add(new TSG.Point(0, 0, 1000));
-
-            //r poly = new TSM.Polygon();
-            //poly.Points.Add(new TSG.Point(0, 0, 0));
-            //poly.Points.Add(new TSG.Point(1000, 1000, 1000));
-
-
-            /*------------------*/
-            //var Poly = new TSM.Polygon();
-            //Poly.Points.Add(new TSG.Point(0, 0, 0));
-            //Poly.Points.Add(new TSG.Point(0, 0, 1000));
+   
             var poly = new TSM.Polygon();
-            poly.Points.Add(new TSG.Point(0, 0, 0));
-            poly.Points.Add(new TSG.Point(0, 0, 1000));
+            poly.Points.Add(new TSG.Point(minX, minY, minZ));
+            poly.Points.Add(new TSG.Point(minX, minY, maxZ));
 
             bar.Polygon.Add(poly);
-            
-            /*------------------*/
-
-
-            //bar.Polygon.Points.Add(new TSG.Point(0, 0, 0));
-            //bar.Polygon.Points.Add(new TSG.Point(0, 0, 1000));
-            //bar.Polygon.Points.Add(new TSG.Point(0, 0, 0));
-            //bar.Polygon.Points.Add(new TSG.Point(0, 0, 1000));
-
-            //   new TSG.Point(0,0,0)
-            //   new TSG.Point(0,0,1000)
-
-            //bar.Polygon.Add(poly);
-            //bar.Polygon.Points.Add(new TSG.Point(minX, minY, minZ));
-            //bar.Polygon.Points.Add(new TSG.Point(minX, minY, maxZ));
-
-
-
-            //var a = new TSM.RebarGroup();
-
-            //var p = new TSM.Polygon();
-            //p.Points.Add(new TSG.Point(0, 0, 0));
-            //p.Points.Add(new TSG.Point(0, 0, 1000));
-
-            //a.Polygons.Add(p);
-
-
-            //bar.Polygons.Add(poly);
-
-            //var aaa = new List<TSG.Point>(); 
-            //aaa.Add(new TSG.Point(minx, miny, minz));
-            //aaa.Add(new TSG.Point(minx, miny, maxX));
-
-            //bar.Polygon.Points.Add(new TSG.Point(minX,minY,minZ));
-            //bar.Polygon.Points.Add(new TSG.Point(minX, minY, maxZ));
-            //bar.Polygon.Points.Add();
-            ///bar.Polygons.Add(new TSG.Point(minX, minY, minZ));
-            //bar.Polygons.Add(new TSG.Point(minX, minY, maxZ));
-            //bar.Polygon = (new TSG.Point(0, 0, 0)).tolist;
-            //bar.Polygon.Add(new TSG.Point(0, 0, 1000));
-            //bar.Polygon.Add(new TSG.Point(minx, miny, minz));
-            //bar.Polygon.Add(new TSG.Point(minx, miny, maxZ));
-
 
             bar.Size = "10";
             bar.Grade = "SD400";
             bar.Radius = 10;
-            //bar.RadiusValues.Add(10.0);
+            bar.Class = 2;
 
 
-            // 부재 종속
+            double sp = 200;
 
-            // 일반
+            var lineseg = new TSG.LineSegment(bar.StartPoint, bar.EndPoint).Length();
 
-            //string val = string.Empty;
-            //var siddname = beam.GetUserProperty("SIDD_WALLVREBAR_", ref val);
+            var spcing = new Spacings();
 
-            //ArrayList vallist = new ArrayList();
-
-            //string[] vararray = val.Split('/');
-
-            //foreach (var item in vararray)
-            //{
-            //    vallist.Add(item);
-            //}
-
-            //bar.Name = "123";
-            ////bar.RadiusValues.Add(KS.GetRadius(Convert.ToDouble(vallist[3])));
-            //bar.Class = 1;
-
-            //// 넘버
-            //bar.NumberingSeries.Prefix = "123";
-            //bar.NumberingSeries.StartNumber = 1;
-
-            //// 시작 후크
-            //bar.StartHook.Shape = TSM.RebarHookData.RebarHookShapeEnum.CUSTOM_HOOK;
-            //bar.StartHook.Angle = 0.0;
-            //bar.StartHook.Length = 0.0;
-            //bar.StartHook.Radius = 0.0;
-
-            //// 끝 후크
-            //bar.EndHook.Shape = TSM.RebarHookData.RebarHookShapeEnum.CUSTOM_HOOK;
-            //bar.EndHook.Angle = 0.0;
-            //bar.EndHook.Length = 0.0;
-            //bar.EndHook.Radius = 0.0;
-
-            //// 피복 두께
-            //bar.OnPlaneOffsets.Add(0.0); // 평면
-            //bar.FromPlaneOffset = 0.0; // 시작 평면
-
-            //bar.StartPointOffsetType = TSM.Reinforcement.RebarOffsetTypeEnum.OFFSET_TYPE_COVER_THICKNESS;
-            //bar.StartPointOffsetValue = 0.0;
-
-            //bar.EndPointOffsetType = TSM.Reinforcement.RebarOffsetTypeEnum.OFFSET_TYPE_COVER_THICKNESS;
-            //bar.EndPointOffsetValue = 0.0;
-
-
-            //TSG.LineSegment lineSegment = new TSG.LineSegment();
-            //lineSegment.Point1 = bar.StartPoint;
-            //lineSegment.Point2 = bar.EndPoint;
-            //var length = lineSegment.Length();
-
-            //// 분산
-            //bar.SpacingType = TSM.RebarGroup.RebarGroupSpacingTypeEnum.SPACING_TYPE_EXACT_SPACINGS;
-            //bar.Spacings.Add(100.0);
-            ////var rightspacing = new Spacings();
-
-            //// 생성
-            //bar.ExcludeType = TSM.RebarGroup.ExcludeTypeEnum.EXCLUDE_TYPE_NONE;
+            bar.Spacing = spcing.SetSpacing(lineseg, sp);
 
             bar.Insert();
             m.CommitChanges();
-
-
-            //var rebar = new TSM.RebarGroup();
-
-
-
-            //rebar.Polygons.Add(new TSG.Point());
-
-
-
-
-            //bar.Spacing = new ArrayList() { 200, 200, 200 };
-
-            //bar.Insert();
-
-
-
 
         }
 

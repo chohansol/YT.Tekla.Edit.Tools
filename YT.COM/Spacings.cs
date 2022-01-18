@@ -40,8 +40,8 @@ namespace YT.COM
                 list.Add(spacing);
             }
     
-            list.Add(length - (spacing * (ea)));
-
+            list.Add(length - (spacing * (ea))-25);
+            list.Add(25);
             return list;
         }
 

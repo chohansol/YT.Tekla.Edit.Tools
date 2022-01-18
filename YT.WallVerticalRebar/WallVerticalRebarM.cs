@@ -119,7 +119,7 @@ namespace YT.WallVerticalRebar
         {
             var m = new TSM.Model();
 
-            #region 범위 설정
+            #region 양단부 범위 설정
 
             var startLineSegment = new TSG.LineSegment();
             startLineSegment.Point1 = point1;
